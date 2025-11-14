@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The 0-to-$1,000,000 Plan</title>
+  <meta name="description" content="A realistic, de-risked, step-by-step plan to reach $1,000,000 starting from zero." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1>Zero ? $1,000,000</h1>
+      <p class="tagline">An execution-first, risk-managed path from nothing to $1M</p>
+      <div class="header-ctas">
+        <a class="btn primary" href="#roadmap">View Roadmap</a>
+        <button class="btn" id="exportPdfBtn" aria-label="Export as PDF">Export PDF</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h2>Operating Principles</h2>
+      <ul class="pill-list">
+        <li>Skill stacking in public: sell ? deliver ? systemize</li>
+        <li>Immediate cash generation, reinvest into scalable engines</li>
+        <li>Short feedback loops, aggressive iteration, compounding leverage</li>
+        <li>No capital, no contacts, no prior skills assumed</li>
+      </ul>
+      <div class="note">This plan prioritizes certainty, speed to first dollars, and resilience. It uses only free tools and time, then compounds into higher-leverage vehicles.</div>
+    </section>
+
+    <section id="calculators" class="card-grid">
+      <article class="card">
+        <h3>Target Calculator</h3>
+        <p>Set a time horizon and see required revenue pace.</p>
+        <div class="form-row">
+          <label for="targetMonths">Months to $1,000,000</label>
+          <input id="targetMonths" type="number" min="1" value="12" />
+        </div>
+        <div class="calc-output" id="targetOutput"></div>
+      </article>
+
+      <article class="card">
+        <h3>Unit Economics</h3>
+        <p>Back out leads and output required from basic assumptions.</p>
+        <div class="form-row">
+          <label for="pricePerSale">Average sale price ($)</label>
+          <input id="pricePerSale" type="number" min="1" value="1000" />
+        </div>
+        <div class="form-row">
+          <label for="closeRate">Close rate (%)</label>
+          <input id="closeRate" type="number" min="1" max="100" value="20" />
+        </div>
+        <div class="form-row">
+          <label for="respRate">Positive response rate (%)</label>
+          <input id="respRate" type="number" min="1" max="100" value="5" />
+        </div>
+        <div class="form-row">
+          <label for="outreachPerDay">Outreach per day</label>
+          <input id="outreachPerDay" type="number" min="1" value="50" />
+        </div>
+        <div class="calc-output" id="unitOutput"></div>
+      </article>
+
+      <article class="card">
+        <h3>Runway Planner</h3>
+        <p>From $0, create runway via fast-cash tactics.</p>
+        <div class="form-row">
+          <label for="hoursPerDay">Hours available per day</label>
+          <input id="hoursPerDay" type="number" min="1" value="6" />
+        </div>
+        <div class="form-row">
+          <label for="daysPerWeek">Days per week</label>
+          <input id="daysPerWeek" type="number" min="1" max="7" value="6" />
+        </div>
+        <div class="calc-output" id="runwayOutput"></div>
+      </article>
+    </section>
+
+    <section id="roadmap">
+      <h2>Roadmap</h2>
+
+      <details open class="phase">
+        <summary>
+          <span>Phase 0 (Week 0?1): Immediate Cash, Proof of Action</span>
+          <span class="kpi">Goal: First $500</span>
+        </summary>
+        <div class="phase-body">
+          <ol>
+            <li><strong>Flip free ? cash:</strong> list 10 free items/day (local classifieds), relist with better photos, deliver. Target: 3 flips/week at $50?$150 margin.</li>
+            <li><strong>Service arbitrage:</strong> offer simple gigs (logo cleanups, profile banners, podcast shownotes) using free tools; subcontract for delivery.</li>
+            <li><strong>Street-level lead gen:</strong> walk-in pitches to 20 local businesses/day (window signage, menu redesign, QR ordering setup). Offer ?pay on delivery?.</li>
+            <li><strong>Public log:</strong> daily thread documenting actions and outcomes to attract inbound.</li>
+          </ol>
+          <div class="checklist" data-checklist="phase0">
+            <label><input type="checkbox" /> 70 outreach actions logged</label>
+            <label><input type="checkbox" /> 3 paid flips</label>
+            <label><input type="checkbox" /> 2 fulfilled micro-gigs</label>
+          </div>
+        </div>
+      </details>
+
+      <details class="phase">
+        <summary>
+          <span>Phase 1 (Week 2?4): Productized Service</span>
+          <span class="kpi">Goal: $3,000/mo run-rate</span>
+        </summary>
+        <div class="phase-body">
+          <ol>
+            <li><strong>Pick one pain:</strong> appointment-setting for solo pros, local SEO quick wins, AI summaries for YouTubers, Shopify speed tune-ups.</li>
+            <li><strong>Define offer:</strong> fixed scope, fast delivery, money-back guarantee, weekly reporting.</li>
+            <li><strong>Acquire with volume:</strong> 100 targeted cold emails/day using free enrichment, 20 DMs/day, 10 Loom audits/week.</li>
+            <li><strong>Delivery SOP:</strong> build templatized workflows; outsource repeatables to vetted freelancers; keep margin > 60%.</li>
+          </ol>
+          <div class="checklist" data-checklist="phase1">
+            <label><input type="checkbox" /> 2 paying clients</label>
+            <label><input type="checkbox" /> SOP v1 written</label>
+            <label><input type="checkbox" /> Weekly KPI review scheduled</label>
+          </div>
+        </div>
+      </details>
+
+      <details class="phase">
+        <summary>
+          <span>Phase 2 (Month 2?4): Scale Systems</span>
+          <span class="kpi">Goal: $10k?$30k/mo</span>
+        </summary>
+        <div class="phase-body">
+          <ol>
+            <li><strong>Channel focus:</strong> keep 1?2 channels that work; discard the rest ruthlessly.</li>
+            <li><strong>Hire bench:</strong> 3?5 freelancers with clear SLAs; QA checklist; async-first.</li>
+            <li><strong>Raise price:</strong> add premium tier with guaranteed outcomes or performance components.</li>
+            <li><strong>Systemize:</strong> weekly operations review; scorecards; simple CRM; cash buffer target of 2 months expenses.</li>
+          </ol>
+          <div class="checklist" data-checklist="phase2">
+            <label><input type="checkbox" /> 10 active clients or equivalent</label>
+            <label><input type="checkbox" /> Margin ? 55%</label>
+            <label><input type="checkbox" /> 2 months cash buffer</label>
+          </div>
+        </div>
+      </details>
+
+      <details class="phase">
+        <summary>
+          <span>Phase 3 (Month 4?9): Build Assets</span>
+          <span class="kpi">Goal: $50k?$80k/mo</span>
+        </summary>
+        <div class="phase-body">
+          <ol>
+            <li><strong>Productize knowledge:</strong> mini-course or playbook built from your SOPs; bundle with templates.</li>
+            <li><strong>Micro-SaaS or automation:</strong> narrowly scoped tool that your clients already pay for manually.</li>
+            <li><strong>Distribution loops:</strong> affiliates, referral incentives, co-promotions, content repurposing flywheel.</li>
+            <li><strong>Improve unit economics:</strong> churn reduction, expansion revenue, upsells.</li>
+          </ol>
+          <div class="checklist" data-checklist="phase3">
+            <label><input type="checkbox" /> Asset #1 launched</label>
+            <label><input type="checkbox" /> 2 evergreen acquisition loops live</label>
+            <label><input type="checkbox" /> NPS ? 40</label>
+          </div>
+        </div>
+      </details>
+
+      <details class="phase">
+        <summary>
+          <span>Phase 4 (Month 9?18): Compounding to $1M</span>
+          <span class="kpi">Goal: $1M cumulative revenue</span>
+        </summary>
+        <div class="phase-body">
+          <ol>
+            <li><strong>Concentrate winners:</strong> double-down on top 20% offers/channels producing 80% of revenue.</li>
+            <li><strong>Operational excellence:</strong> simple dashboard, cashflow discipline, monthly experiments cadence.</li>
+            <li><strong>Optional scale:</strong> outbound team, paid acquisition (reinvest profits), partnerships.</li>
+            <li><strong>Resilience:</strong> diversify 2+ revenue streams, maintain emergency buffer, keep fixed costs lean.</li>
+          </ol>
+          <div class="checklist" data-checklist="phase4">
+            <label><input type="checkbox" /> 3 compounding growth loops</label>
+            <label><input type="checkbox" /> 2 resilient revenue streams</label>
+            <label><input type="checkbox" /> 6-month cash runway</label>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <section id="daily">
+      <h2>Daily Operating Rhythm</h2>
+      <div class="grid-2">
+        <div>
+          <ul class="check-list">
+            <li>2h: Prospecting and outreach</li>
+            <li>1h: Follow-ups and pipeline</li>
+            <li>2h: Delivery against SOPs</li>
+            <li>1h: Build assets (course/tool/templates)</li>
+            <li>30m: Metrics review and plan tomorrow</li>
+          </ul>
+        </div>
+        <div>
+          <div class="kpi-box">
+            <div class="kpi-item"><span>Daily Outreach</span><strong id="kpiOutreach">50</strong></div>
+            <div class="kpi-item"><span>Leads / Day</span><strong id="kpiLeads">2.5</strong></div>
+            <div class="kpi-item"><span>Deals / Week</span><strong id="kpiDeals">2</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources">
+      <h2>Free Tools Only (Start)</h2>
+      <ul class="resource-list">
+        <li>Docs: Google Docs, Sheets, Drive</li>
+        <li>Design: Figma free, Canva free</li>
+        <li>CRM: Notion or Airtable base</li>
+        <li>Outreach: Gmail + mail merge, LinkedIn manual, Loom</li>
+        <li>Automation: Make/Zapier free tiers, browser extensions</li>
+        <li>Site: This page + basic landing (Notion/Super or simple static)</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container small">Execute daily. Measure weekly. Compound monthly.</div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>

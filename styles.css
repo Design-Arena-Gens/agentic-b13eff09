@@ -1,0 +1,67 @@
+* { box-sizing: border-box; }
+:root {
+  --bg: #0b0d12;
+  --panel: #111622;
+  --panel-2: #0f1420;
+  --text: #e6e8ee;
+  --muted: #a7b0c0;
+  --brand: #6ee7ff;
+  --brand-2: #7c3aed;
+  --ok: #34d399;
+}
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  background: linear-gradient(180deg, #0b0d12 0%, #0b0d12 70%, #0e111a 100%);
+  color: var(--text);
+  line-height: 1.6;
+}
+.container { width: min(1120px, 92vw); margin: 0 auto; }
+.small { font-size: 0.9rem; color: var(--muted); }
+
+.site-header { position: sticky; top: 0; z-index: 10; background: rgba(11,13,18,0.8); backdrop-filter: saturate(180%) blur(10px); border-bottom: 1px solid #1a2234; }
+.header-inner { padding: 28px 0; display: grid; grid-template-columns: 1fr; gap: 8px; }
+.site-header h1 { font-size: 1.8rem; margin: 0; letter-spacing: 0.2px; }
+.tagline { margin: 0; color: var(--muted); }
+.header-ctas { display: flex; gap: 10px; margin-top: 8px; }
+.btn { appearance: none; border: 1px solid #243048; background: var(--panel-2); color: var(--text); padding: 10px 14px; border-radius: 10px; cursor: pointer; font-weight: 600; }
+.btn.primary { background: linear-gradient(90deg, #1f2937, #0b1221); border-color: #2a3752; color: #daf2ff; }
+.btn:hover { filter: brightness(1.05); }
+
+.intro { padding: 28px 0; }
+.pill-list { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.pill-list li { background: #111827; border: 1px solid #1f2a44; color: #d3d9e6; padding: 8px 12px; border-radius: 999px; font-size: 0.92rem; }
+.note { margin-top: 14px; background: #101521; border: 1px solid #1d2842; padding: 12px 14px; border-radius: 12px; color: #c6d2ea; }
+
+.card-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 16px; }
+@media (max-width: 980px) { .card-grid { grid-template-columns: 1fr; } }
+.card { background: var(--panel); border: 1px solid #202a40; border-radius: 16px; padding: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.25); }
+.card h3 { margin-top: 0; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; align-items: center; margin: 10px 0; }
+.form-row label { color: var(--muted); }
+.form-row input { width: 100%; background: #0e1420; border: 1px solid #1d2740; color: var(--text); padding: 10px 12px; border-radius: 10px; }
+.calc-output { margin-top: 10px; background: #0c101a; border: 1px dashed #233152; border-radius: 12px; padding: 12px; color: #d8e5ff; }
+
+#roadmap { margin: 28px 0; }
+.phase { border: 1px solid #1e2940; background: #0e1420; border-radius: 14px; margin-bottom: 14px; overflow: hidden; }
+.phase > summary { cursor: pointer; padding: 14px; display: flex; justify-content: space-between; align-items: center; gap: 10px; list-style: none; }
+.phase > summary::-webkit-details-marker { display:none; }
+.phase .kpi { color: #c7d2ff; background: #0c1020; border: 1px solid #1a2350; padding: 6px 10px; border-radius: 10px; font-size: 0.9rem; }
+.phase-body { padding: 0 14px 14px; }
+.phase ol { margin: 0; padding-left: 18px; }
+.checklist { margin-top: 10px; background: #0b0f19; border: 1px solid #1a2648; border-radius: 12px; padding: 10px; display: grid; gap: 6px; }
+.checklist input[type="checkbox"] { transform: scale(1.2); margin-right: 8px; }
+
+#daily { margin: 28px 0; }
+.grid-2 { display: grid; grid-template-columns: 1.5fr 1fr; gap: 16px; }
+@media (max-width: 980px) { .grid-2 { grid-template-columns: 1fr; } }
+.check-list { margin: 0; padding-left: 18px; }
+.kpi-box { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.kpi-item { background: #0c111d; border: 1px solid #1b2540; border-radius: 12px; padding: 12px; display:flex; justify-content: space-between; align-items: baseline; }
+.kpi-item span { color: var(--muted); }
+.kpi-item strong { font-size: 1.4rem; color: var(--ok); }
+
+.resource-list { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 10px; list-style: none; padding:0; margin:0; }
+.resource-list li { background: #0e1320; border: 1px solid #1b2642; padding: 10px 12px; border-radius: 12px; }
+
+.site-footer { margin: 28px 0 40px; color: var(--muted); text-align: center; }
